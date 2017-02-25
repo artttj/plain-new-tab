@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "plain new tab",
+  "description": "This simple extension removes the search and logo from the new tab page",
+  "version": "1.0",
+  "author": "Artyom Yagovdik <qweirdy@gmail.com>",
+  "content_scripts": [
+    {
+      "matches": ["*://*/_/chrome/newtab*"],
+      "js": ["content.js"],
+      "css": ["clear_new_tab.css"]
+    }
+  ],
+  "icons": {
+    "128": "icon.png"
+  }
+}
